@@ -1,0 +1,235 @@
+/* Name: Keyal Manvar , Student Number: 8980735 */
+body {
+    width: 100%;
+    font: 16px/1.5 , sans-serif;
+    background-color: hsla(40, 45%, 70%, 0.6);
+    display:flex ;
+    flex-direction: column;
+    height: 100vh;
+  }
+  header h1 {
+    color: black;
+    font-size: 0.5in;
+    
+}
+div {
+  border: 5px solid black;
+  margin: 20px;
+}
+.structural {
+  padding: 10px;
+  border: 3px solid black;
+  margin:25px ;
+}
+
+body h2{
+  font-size: 18px;
+}
+main{
+    float: left;
+    width: 60%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    height:  50vh; 
+    flex: 2 1 70%;
+    background-color: hsl(120, 100%, 50%);
+
+
+  border-radius: 25px;
+   font-family: Arial, Helvetica, sans-serif ;
+}
+aside {
+  background-color: hsl(91, 100%, 50%);
+  float: right;
+  width: 20%;
+  text-align: center;
+  height: 48vh;
+  margin-bottom: 18px;
+  margin-right: 5%;
+  flex: 1 1 30%;
+  padding: 8px;
+}
+
+
+  footer {
+clear: both;
+  }
+  header{
+    border: 1px solid #000000;
+    text-align: left;
+    border-radius: 25px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: hsl(120, 100%, 50%);
+  }
+  
+ 
+  #paragraph1{
+    color: rgb(255, 0, 0);
+  }
+  
+  #paragraph2 {
+    color: rgb(234, 0, 255);
+  }
+
+  
+  
+  
+.structural header {
+    background-color: hsl(40, 16%, 62%);
+}
+
+.structural main {
+    background-color: hsl(181, 100%, 50%);    
+}
+
+.structural aside {
+    background-color: rgb(206, 184, 118);    
+}
+
+.structural footer {
+    background-color:  hsl(91, 100%, 50%);    
+}
+aside ul {
+    list-style-type: square;
+}
+  
+aside ul li.hover,
+aside ul li:hover {
+    height: 2ln;
+    color: rgba(0, 0, 255, 1);
+}
+  
+aside ul li a:hover {
+    color: rgba(0, 0, 255, 1);
+}
+
+nav ul {
+    display: inline;
+    padding: 0;
+}
+  
+nav li {
+    display: inline;
+    padding: 0 0.5em;
+}
+  
+nav a {
+    border: 2px solid indigo;
+    color: indigo;
+    background-color: cornsilk;
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+nav a:hover{
+  color: slategray;
+  border: 3px solid cornsilk;
+}
+.form-element {
+  background-color: aliceblue;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  
+
+}
+
+.form-element label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.form-element input[type="text"],.form-element input[type="email"],.form-element input[type="checkbox"] {
+  vertical-align: middle;
+}
+
+.form-element textarea {
+  
+  width: 300px;
+}
+
+.form-element select {
+  width: 300px;
+}
+
+.form-element input[type="submit"] {
+  margin-left: 10px;
+}
+
+.form-element.textarea,.form-element.submit {
+  display: flex;
+  align-items: center;
+}
+
+.form-element.submit input[type="submit"] {
+  margin-left: 0;
+}
+
+.form-element.submit input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+.form-element input[type="checkbox"] {
+  margin-left: 10px;
+}
+
+.form-element select,.form-element textarea {
+  resize: vertical;
+}
+
+.form-element select option[value=""][disabled][selected] {
+  display: none;
+}
+
+.form-element input:invalid,.form-element select:invalid,.form-element textarea:invalid,.form-element [type="checkbox"]:invalid {
+  border: 1px solid red;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+footer p{
+  color: aliceblue;
+  font-size: medium;
+  background-color: hsla(150, 95%, 15%, 0.8);
+}
+figure img{
+  width: 100%;
+  height: 80%;
+}
+
+figure {
+  border: 2px solid black; 
+}
+
+figcaption {
+  text-align: center; 
+}
+@media (max-width: 600px) {
+  html {
+      font-size: 10px;
+  }
+
+  #gallery {
+      grid-template-columns: autox;
+  }
+
+  body {
+      
+      flex-direction: column-reverse;
+
+  }
+}
